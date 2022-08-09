@@ -42,13 +42,15 @@
 
 	float newVolume = [AVAudioSession sharedInstance].outputVolume;
 
-	[UIView transitionWithView:islaSliderView duration:0.5 options:UIViewAnimationOptionCurveEaseInOut animations:^{
+	[UIView transitionWithView:islaSliderView duration:0.25 options:UIViewAnimationOptionCurveEaseInOut animations:^{
 
 		float newConstant = newVolume < 0.999 ? floor(newVolume * 229) : 229;
 
 		islaSliderWidthAnchorConstraint.active = NO;
 		islaSliderWidthAnchorConstraint = [islaSliderView.widthAnchor constraintEqualToConstant: newConstant];
 		islaSliderWidthAnchorConstraint.active = YES;
+
+		[self layoutIfNeeded];
 
 	} completion:nil];
 
