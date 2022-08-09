@@ -1,6 +1,6 @@
 # Isla
 
-<img src="https://raw.githubusercontent.com/Luki120/luki120.github.io/master/assets/Misc/Isla.png" width="300">
+<img src="https://raw.githubusercontent.com/Luki120/luki120.github.io/master/assets/Misc/Isla.jpeg" width="300">
 
 ## Socials
 
