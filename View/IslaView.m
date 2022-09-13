@@ -42,7 +42,7 @@
 
 	float newVolume = [AVAudioSession sharedInstance].outputVolume;
 
-	[UIView transitionWithView:islaSliderView duration:0.25 options:UIViewAnimationOptionCurveEaseInOut animations:^{
+	[UIView animateWithDuration:0.25 delay:0 options:UIViewAnimationOptionCurveEaseInOut animations:^{
 
 		float newConstant = newVolume < 0.999 ? floor(newVolume * 229) : 229;
 
